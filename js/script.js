@@ -19,13 +19,32 @@ const grid=document.querySelector('.grid');
 
 //mi metto in ascolto del click per selezionare la difficoltà
 buttonEasy.addEventListener("click", function(){
+    //pulisco il contenuto del grid ad ogni click
+    grid.innerHTML="";
+
     //genero 49 box ad ogni click
+    for(let i=1; i<=49; i++){
+        newBox(grid, i);
+    }
+
 })
 
 buttonMedium.addEventListener("click", function(){
+    //pulisco il contenuto del grid ad ogni click
+    grid.innerHTML="";
+
     //genero 81 box ad ogni click
+    for(let i=1; i<=81; i++){
+        newBox(grid, i);
+    }
 })
 
 buttonHard.addEventListener("click", function(){
+    //pulisco il contenuto del grid ad ogni click
+    grid.innerHTML="";
+
     //genero 90 box ad ogni click
+    for(let i=1; i<=100; i++){
+        newBox(grid, i);
+    }
 })
