@@ -10,19 +10,24 @@
 
 .grid{
     width: calc(90vh + 2px);
-    height: calc(90vh + 2px);
+    /* height: calc(90vh + 2px); */
     margin: 0 auto;
     border: black 1px solid;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .box{
     height: calc(90vh / var(--n));
     width: calc(90vh / var(--n));
+    line-height:calc(90vh / var(--n));
+    text-align: center;
     border: black 1px solid;
+    flex-grow: 1; /*fix problema di arrotondamento Chrome*/
 }
 
 .box.lightblue{
     background-color: lightblue;
 }
+

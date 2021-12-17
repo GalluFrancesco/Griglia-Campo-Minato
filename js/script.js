@@ -38,7 +38,6 @@ buttonEasy.addEventListener("click", function(){
     for(let i=1; i<=49; i++){
         newBox(grid, i);
     }
-
 })
 
 buttonMedium.addEventListener("click", function(){
