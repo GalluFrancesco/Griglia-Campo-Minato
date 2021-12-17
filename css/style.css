@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: calc(90vh + 2px);
+    height: calc(90vh + 2px);
+    margin: 0 auto;
+    border: black 1px solid;
+}
