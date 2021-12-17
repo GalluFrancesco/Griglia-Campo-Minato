@@ -5,8 +5,14 @@ function newBox(container, n){
     box.className="box";
     box.innerHTML=n;
     container.append(box);
-  }
-
+    addEvent(box);
+}
+//creo funzione per cambiare il colore del bg al click
+function addEvent(element){
+    element.addEventListener("click", function(){
+    this.classList.toggle("lightblue");
+    })
+}
 
 //creo gli attributi per richiamare i 3 button del Dom
 const buttonEasy=document.querySelector('.level-1')

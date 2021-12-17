@@ -22,3 +22,7 @@
     width: calc(90vh / var(--n));
     border: black 1px solid;
 }
+
+.box.lightblue{
+    background-color: lightblue;
+}
