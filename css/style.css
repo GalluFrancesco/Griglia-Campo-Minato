@@ -10,3 +10,9 @@
     margin: 0 auto;
     border: black 1px solid;
 }
+
+.box{
+    height: calc(90vh / 10);
+    width: calc(90vh / 10);
+    border: black 1px solid;
+}
