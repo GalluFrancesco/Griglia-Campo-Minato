@@ -14,6 +14,13 @@ function addEvent(element){
     })
 }
 
+//creo funzione per gestire i colori dei pulsanti
+function colorePulsante(button1, button2, thisButton){
+    button1.classList.remove('focus-button');
+    button2.classList.remove('focus-button');
+    thisButton.classList.add('focus-button');
+}
+
 //creo gli attributi per richiamare i 3 button del Dom
 const buttonEasy=document.querySelector('.level-1')
 const buttonMedium=document.querySelector('.level-2')
@@ -30,6 +37,9 @@ buttonEasy.addEventListener("click", function(){
     //pulisco il contenuto del grid ad ogni click
     grid.innerHTML="";
 
+    //evidenzio il pulsante
+    colorePulsante(buttonMedium, buttonHard, buttonEasy)
+
     //setto quanti box voglio per riga e per colonna
     //7 per difficoltà facile
     root.style.setProperty('--n', '7')
@@ -44,6 +54,9 @@ buttonMedium.addEventListener("click", function(){
     //pulisco il contenuto del grid ad ogni click
     grid.innerHTML="";
 
+    //evidenzio il pulsante
+    colorePulsante(buttonEasy, buttonHard, buttonMedium)
+
     //setto quanti box voglio per riga e per colonna
     //9 per difficoltà facile
     root.style.setProperty('--n', '9')
@@ -57,6 +70,9 @@ buttonMedium.addEventListener("click", function(){
 buttonHard.addEventListener("click", function(){
     //pulisco il contenuto del grid ad ogni click
     grid.innerHTML="";
+
+    //evidenzio il pulsante
+    colorePulsante(buttonEasy, buttonMedium, buttonHard)
 
     //setto quanti box voglio per riga e per colonna
     //10 per difficoltà facile
